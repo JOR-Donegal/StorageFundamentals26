@@ -3,11 +3,11 @@
 There are some different terms we use for how data is aggregated and stored. Sometimes we deal with data one character at a time. In Unix for example, devices can be _character based_, like a keyboard or a mouse. 
 
 ## Block Storage ##
-For efficiency and for structure data, we store data on disks in blocks of a fixed size and we call this _block storage_. A block is a sequence of bits or bytes of a fixed length, determined by the underlying system. Imagine a 64-bit system; things get really confusing once we store multiple bytes, we could store the most significant byte first or last. We have terms like big-endian and little-endian to describe this. Secondary storage is block storage, with disks being broken up into sectors, originally of 512 Bytes, these days of 4,096 Bytes. For efficiency, some file systems aggregate these sectors further into blocks or clusters. 
+For efficiency and scale, we store data on disks in blocks of a fixed size and we call this _block storage_. A block is a sequence of bits or bytes of a fixed length, determined by the underlying system. Imagine a 64-bit system; things get really confusing once we store multiple bytes, we could store the most significant byte first or last. We have terms like _big-endian_ and _little-endian_ to describe this. Secondary storage is block storage, with disks being broken up into sectors, originally of 512 Bytes, these days of 4,096 Bytes. To scale, some file systems aggregate these sectors further into _blocks_ or _clusters_. 
 
-In data centre work, we abstract and aggregate disks into a single device for block storage, using a network to share volumes of data amongst many servers. Adding a disk array to a volume manager gives us a device called a _Storage Area Network_ (SAN). 
+In data centre work, we abstract and aggregate disks into a single device for block storage, using a network to share volumes of data amongst many servers. Adding a disk array to a volume manager gives us a device called a _Storage Area Network_ (SAN). There are other terms we will learn later, like _volumes_.
 
-Originally, we stored data directly on disks and for reliability, we used reliability techniques like the _Redundant Array of Independent Disks_ (RAID), which will be explained in later lectures. 
+Originally, we stored data directly on disks and for reliability, we used reliability techniques like the _Redundant Array of Independent Disks_ (RAID), which will be explained in later lectures. On modern systems, we have more sophisticated techniques, like _erasure coding_.
 
 ## File Storage
 One of the earliest applications on a LAN was for file sharing from _file storage_.
