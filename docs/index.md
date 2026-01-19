@@ -1,7 +1,17 @@
 # Introduction
 
-!!! abstract "Introduction to Stuff"
+!!! abstract "Fundamentals of Storage"
 
-This will be the main introduction page
+The word “storage” in isolation is probably a terrible title for this topic! When people in the data centre world talk about data storage, they are referring to the kind of storage we normally associated with hard disks. Topics like this arose from the need to study complex disk storage systems and techniques. But data storage comes in many architectural forms, can utilize many techniques with different characteristics and is perpetually changing. 
 
-Edit mkdoc.yml to set the name of this document
+We will deal with the memory hierarchy in another lecture, but electronic memory in a computer is referred to as _primary storage_; when we say that a computer has 8GB of DRAM, we are referring to primary storage. We load operating systems and programme from a magnetic hard disk drive (HDD) or solid-state drive (SSD); this is _secondary storage_. If we take a backup to tape or to any other form of off-line medium, this may be called _tertiary storage_. 
+
+In the 1950s, we stored data on punched cards and IBM used this technology until the 1960s. Magnetic tape took over in the mid-1960s and the first commercial hard disk drive emerged; the IBM 350. Physically, it had 50 disk platters with 100 tracks for data on each. Spinning at 1200 RPM with a data transfer rate of 8.8KB/s, it stored 5 million 6-bit characters of data. Much of the initial technology for secondary storage originated with IBM and I used some of their original 8” disks with minicomputers in the 1980s. With the personal computer revolution in 1980, storage technology met Moore’s law. In some storage references, this was the _first platform_. 
+
+My school got an Apple II sometime after 1978, but it did not have a usable storage device (it had tape) and was almost unusable. But you had to love the 6502 processor! 
+
+The first computer I seriously programmed had 3.5KB of available main memory and could be loaded and backed up from a magnetic tape (Commodore VIC20) c.1980. My first PC (Amstrad PC1512) had 5 ¼” floppy disks which stored 360KB of data, but I did work with older minicomputers with 8” floppy disks with 180K capacity. My Amstrad had 512KB of main memory and I quickly upgraded it to its maximum 640KB (by installing 16 small DRAM chips!). I installed my first hard drive on this computer, and it came on a card and had 20MB of storage, c. 1988. Someone who could work with hardware like this was referred to as a _hacker_, a very different meaning to now. In some storage references, this was the _second platform_.  
+
+In 2020 I bought a server with 384GB of DRAM capacity, an array of TB SSDs and NVMe slots. I am sitting at a computer which syncs three separate 1TB OneDrive shares, a 1TB Drop Box, 1TB Apple iCloud and a 15GB GDrive, all of which back up in real time to iCloud (not Apple, same name!). In some storage references, the combination of Cloud, Mobile, Big Data and social media are referred to as the _third platform_. 
+
+Things have changed a little over the past 40 years. One thing is certain, by the time I write notes, they are out of date! It is important that you read widely around the topic, from sources that are relevant and current. In these notes, I will introduce some concepts and terminology, so we have a shared vocabulary and understanding to work on for the rest of the module. Much of what we do in this module is based on enterprise computing, we will however also discuss the technologies that are revolutionizing our industry; the move to public cloud and mobile (and in 2026, the move back!!), the emergence of social media and the application of big data. 
